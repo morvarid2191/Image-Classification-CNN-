@@ -2,5 +2,30 @@
 import os
 data_dir=r'C:\Users\morva\Documents\Python Scripts\cell_images\cell_images'
 os.listdir(data_dir)
-#['test', 'train']
+#['test', 'train'] There are test and train forlder
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+%matplotlib inline
+from matplotlib.image import imread
+
+# Create two variables
+test_path=data_dir+'\\test'
+train_path=data_dir+'\\train'
+
+os.listdir(test_path)
+#['parasitized', 'uninfected']
+
+os.listdir(r'C:\Users\morva\Documents\Python Scripts\cell_images\cell_images\train\parasitized')
+#['C100P61ThinF_IMG_20150918_144104_cell_162.png',
+ 'C100P61ThinF_IMG_20150918_144104_cell_163.png',...
+ 'C116P77ThinF_IMG_20150930_172112_cell_67.png',
+ 'C116P77ThinF_IMG_20150930_172112_cell_68.png',
+ ...]
+ 
+ os.listdir(r'C:\Users\morva\Documents\Python Scripts\cell_images\cell_images\train\parasitized')[0]
+#'C100P61ThinF_IMG_20150918_144104_cell_162.png'
+
+
 
