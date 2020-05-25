@@ -80,6 +80,12 @@ imread(para_cell)
         ...,
         [0., 0., 0.],
         [0., 0., 0.],
-        [0., 0., 0.]]], dtype=float32)
+        [0., 0., 0.]]], dtype=float32)   so we converted a png file into an array!
         
         
+imread(para_cell).shape
+#(148, 142, 3) is a color image
+ 
+plt.imshow(imread(para_cell))
+#<matplotlib.image.AxesImage at 0x111c8c98348>
+
