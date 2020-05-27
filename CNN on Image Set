@@ -89,3 +89,26 @@ imread(para_cell).shape
 plt.imshow(imread(para_cell))
 #<matplotlib.image.AxesImage at 0x111c8c98348>
 
+os.listdir(train_path+'uninfected')[0]
+uninfected_cell=train_path+'uninfected\\'+'C100P61ThinF_IMG_20150918_144104_cell_128.png'
+uninfected_cell
+plt.imshow(imread(uninfected_cell))
+#<matplotlib.image.AxesImage at 0x111ca018d88>
+
+dim1=[]
+dim2=[]
+for image_filename in os.listdir(test_path+'uninfected'):
+    img=imread(test_path+'uninfected\\'+image_filename)
+    d1,d2,colors=img.shape
+    dim1.append(d1)
+    dim2.append(d2)
+    
+#Get the average of dimensions
+np.mean(dim1)
+np.mean(dim2)
+#130.75
+
+image_shape=(130,130,2)
+
+
+
