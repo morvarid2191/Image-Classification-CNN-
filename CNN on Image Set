@@ -150,6 +150,8 @@ test_image_gen=image_gen.flow_from_directory(train_path,target_size=image_shape[
 #Found 24958 images belonging to 2 classes.
 
 
+train_image_gen.class_indices
+#{'parasitized': 0, 'uninfected': 1}
 
 
 
