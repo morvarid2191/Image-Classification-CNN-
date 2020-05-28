@@ -142,6 +142,11 @@ from tensorflow.keras.callbacks import EarlyStopping
 early_stop=EarlyStopping(monitor='val_loss',patience=2)
 batch_size=16
 
+train_image_gen=image_gen.flow_from_directory(train_path,target_size=image_shape[:2],color_mode='rgb',batch_size=batch_size, class_mode='binary')
+#Found 24958 images belonging to 2 classes.
+
+
+
 
 
 
